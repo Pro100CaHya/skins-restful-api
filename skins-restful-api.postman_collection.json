@@ -40,7 +40,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"amount\": 95\n}",
+							"raw": "{\n    \"amount\": 100\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -48,7 +48,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{host}}/api/users/1",
+							"raw": "http://{{host}}/api/users/1/write-off-balance",
 							"protocol": "http",
 							"host": [
 								"{{host}}"
@@ -56,14 +56,15 @@
 							"path": [
 								"api",
 								"users",
-								"1"
+								"1",
+								"write-off-balance"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "write-off-balance-of-user-1 Copy",
+					"name": "write-off-balance-of-user-2-which-not-exists",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -77,7 +78,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{host}}/api/users/2",
+							"raw": "http://{{host}}/api/users/2/write-off-balance",
 							"protocol": "http",
 							"host": [
 								"{{host}}"
@@ -85,7 +86,8 @@
 							"path": [
 								"api",
 								"users",
-								"2"
+								"2",
+								"write-off-balance"
 							]
 						}
 					},

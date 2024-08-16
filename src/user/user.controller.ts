@@ -20,7 +20,7 @@ export class UserController implements Controller {
     ) {}
 
     public registerRoutes(fastify: FastifyInstance, prefix: string = "/api") {
-        fastify.post(`${prefix}${this.path}/:id`, {
+        fastify.post(`${prefix}${this.path}/:id/write-off-balance`, {
             preHandler: [
                 requestValidator(writeOffBalanceBodySchema),
                 requestValidator(writeOffBalanceParamsSchema, "params")

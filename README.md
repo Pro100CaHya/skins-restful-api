@@ -8,6 +8,11 @@ A Simple RESTFul API based on:
 - PostgreSQL
 - TypeScript
 
+## Endpoints Description
+
+- */api/items* - Get all items from Skinport with min tradable and min non tradable prices
+- */api/users/:id/write-off-balance* - Get off amount from user balance. If user not found, will return 404 
+
 ## How to start the project
 
 1. Clone this repo
